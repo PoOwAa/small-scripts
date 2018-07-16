@@ -1,7 +1,7 @@
 import * as path from 'path';
 import { PrestaShopImageUploader, PrestaShopImageType } from './prestashop.client';
 
-const appDir = '/home/raymund/Work/small-scripts/04-sharp-test';
+const appDir = path.join(__dirname, '..');
 const prestaShopImageUploader = new PrestaShopImageUploader();
 
 prestaShopImageUploader.uploadImage(path.join(appDir, 'assets', 'img', 'beach.jpeg'), PrestaShopImageType.PRODUCT).then( (data) => {
