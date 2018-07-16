@@ -29,7 +29,7 @@ export const PrestaShopImageEnum = {
 export class PrestaShopImageUploader {
     protected defaultOptions = {
         savePath: 'assets/img',
-        appDir: '/home/raymund/Work/small-scripts/04-sharp-test',
+        appDir: path.join(__dirname, '..'),
     };
 
     protected productImageTypes = [PrestaShopImageEnum.PS_CART, PrestaShopImageEnum.PS_HOME, PrestaShopImageEnum.PS_SMALL, PrestaShopImageEnum.PS_MEDIUM, PrestaShopImageEnum.PS_LARGE];
